@@ -10,8 +10,8 @@ function selectOption(option) {
             displayCatHeart(); // Display the cat-heart.gif
         });
     } else if (option === 'no') {
-        // Change text on the "no" button to "You sure?"
-        document.getElementById('no-button').innerText = 'You sure?'; 
+        // Change text on the "no" button to "Ты уверена?"
+        document.getElementById('no-button').innerText = 'Ты уверена?'; 
         // Increase font size of "yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -19,7 +19,7 @@ function selectOption(option) {
         yesButton.style.fontSize = newSize + 'px';
     } else {
         // If neither "yes" nor "no" was clicked, show an alert message
-        alert('Invalid option!');
+        alert('Ошибка!');
     }
 }
 
